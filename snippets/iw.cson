@@ -1,0 +1,69 @@
+'.html.text.vue':
+    'create http get and post':
+        'prefix': 'vueajax'
+        'body': """
+this.$http.${1:post}("${2:url}", ${3:this.data})
+        .then((res) => {
+            ${0:console.log("success : " + JSON.stringify(res))
+        })
+        .catch((err) => {
+            console.warn(JSON.stringify(err));
+        })
+"""
+    'create vue methods':
+        'prefix': 'vuemethods'
+        'body': """
+        methods: function() {
+            $0
+        },
+        """
+    'create vue watch':
+        'prefix': 'vuewatch'
+        'body': """
+        watch: function() {
+            $0
+        },
+        """
+    'create vue data':
+        'prefix': 'vuedata'
+        'body': """
+        data: function() {
+                $0
+        },
+        """
+    'create vue props':
+        'prefix': 'vueprops'
+        'body': """
+        props: function() {
+                $0
+        },
+        """
+
+
+
+'.source.js':
+    'create http get and post':
+        'prefix': 'httpajax'
+        'body': """
+this.$http.post("${1:url}", ${2:this.data})
+        .then((res) => {
+            ${3:console.log("success : " + JSON.stringify(res))
+        })
+        .catch((err) => {
+            console.warn(JSON.stringify(err));
+        })
+"""
+
+    'console.log with variable':
+        'prefix': 'logg'
+        'body': 'console.log("@@@ ${1:description} - ${2:variable_name}: " + ${2:variable_name});$3'
+    'console.log':
+        'prefix': 'log'
+        'body': 'console.log("@@@ ${1:description}");$2'
+    'console.dir':
+        'prefix': 'logdir'
+        'body': 'console.dir($1);'
+
+    'json stringify':
+        'prefix': 'jsonstr',
+        'body': 'JSON.stringify'

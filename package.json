@@ -1,0 +1,17 @@
+{
+  "name": "itwonders",
+  "version": "1.0.0",
+  "description": "various helper tool used by Itwonders Design Team",
+  "engines": {
+    "atom": "*"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ITWonders/atom-utils.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ITWonders/atom-utils.git"
+  },
+  "license": "MIT"
+}

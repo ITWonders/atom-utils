@@ -67,3 +67,45 @@ this.$http.post("${1:url}", ${2:this.data})
     'json stringify':
         'prefix': 'jsonstr',
         'body': 'JSON.stringify'
+
+
+'.source.go':
+    'import iw http':
+        'prefix': 'importiwhttp'
+        'body': 'iwhttp "encanvaskgo/itwonders/http"'
+
+    'import iw auth':
+        'prefix': 'importiwauth'
+        'body': 'iwauth "encanvaskgo/itwonders/auth/authuser"'
+
+    'import iw http':
+        'prefix': 'importiwmo'
+        'body': 'iwmo "encanvaskgo/itwonders/model"'
+
+    'import iw table':
+        'prefix': 'importiwtable'
+        'body': 'iwtb "encanvaskgo/itwonders/database/table"'
+
+    'import iw database':
+        'prefix': 'importiwdb'
+        'body': 'iwdb "encanvaskgo/itwonders/database"'
+
+    'import iw util':
+        'prefix': 'importiwutil'
+        'body': 'iwutil "encanvaskgo/itwonders/util"'
+
+    'import iw database':
+        'prefix': 'importiwdb'
+        'body': 'iwdb "encanvaskgo/itwonders/database"'
+
+    'import gin':
+        'prefix': 'importgin'
+        'body': '"github.com/gin-gonic/gin"'
+
+    'import gin binding':
+        'prefix': 'importginbinding'
+        'body': '"github.com/gin-gonic/gin/binding"'
+
+
+
+

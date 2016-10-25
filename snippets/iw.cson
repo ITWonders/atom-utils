@@ -70,6 +70,10 @@ this.$http.post("${1:url}", ${2:this.data})
 
 
 '.source.go':
+    'fmt printf':
+        'prefix': 'fmtdump'
+        'body': 'fmt.Printf("%+v\n", $1)'
+    
     'import iw http':
         'prefix': 'importiwhttp'
         'body': 'iwhttp "encanvaskgo/itwonders/http"'
@@ -78,7 +82,7 @@ this.$http.post("${1:url}", ${2:this.data})
         'prefix': 'importiwauth'
         'body': 'iwauth "encanvaskgo/itwonders/auth/authuser"'
 
-    'import iw http':
+    'import iw model':
         'prefix': 'importiwmo'
         'body': 'iwmo "encanvaskgo/itwonders/model"'
 
@@ -94,9 +98,9 @@ this.$http.post("${1:url}", ${2:this.data})
         'prefix': 'importiwutil'
         'body': 'iwutil "encanvaskgo/itwonders/util"'
 
-    'import iw database':
-        'prefix': 'importiwdb'
-        'body': 'iwdb "encanvaskgo/itwonders/database"'
+    'import iw ctrl':
+        'prefix': 'importiwctrl'
+        'body': 'iwctrl "encanvaskgo/itwonders/controller"'
 
     'import gin':
         'prefix': 'importgin'
@@ -106,6 +110,9 @@ this.$http.post("${1:url}", ${2:this.data})
         'prefix': 'importginbinding'
         'body': '"github.com/gin-gonic/gin/binding"'
 
+    'convert mm to type *Model':
+        'prefix': 'mmm'
+        'body': 'mm := (*Model) (m)'
 
 
 

@@ -115,4 +115,25 @@ this.$http.post("${1:url}", ${2:this.data})
         'body': 'mm := (*Model) (m)'
 
 
+'.source.css':
+    'bootstrap xs':
+        'prefix': 'cssmediatemplate'
+        'body': """
+/* mobile/base */
 
+/* mobile landscape */
+@media all and (min-width: 480px) {
+}
+
+/* tablet */
+@media all and (min-width: 768px) {
+}
+
+/* desktop */
+@media all and (min-width: 1024px) {
+}
+
+/* desktop wide */
+@media all and (min-width: 1200px) {
+}
+"""
